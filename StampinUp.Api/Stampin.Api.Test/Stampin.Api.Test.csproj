@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.17.0" />
+    <PackageReference Include="Moq.AutoMock" Version="2.3.0" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stampin.Api.Business\Stampin.Api.Business.csproj" />
+    <ProjectReference Include="..\Stampin.Api.Common\Stampin.Api.Common.csproj" />
+    <ProjectReference Include="..\Stampin.Api.DataAccess\Stampin.Api.DataAccess.csproj" />
+    <ProjectReference Include="..\StampinUp.Api\StampinUp.Api.csproj" />
+  </ItemGroup>
+
+</Project>
